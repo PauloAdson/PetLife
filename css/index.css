@@ -15,103 +15,6 @@ body {
 
 
 /* Responsividade Para tablet */
-@media screen and 
-(min-width: 768px) and
-(max-width: 1270px) {
-    
-    nav {
-        display: flex;
-    }
-    main {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    main::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(/img/start-img.svg);
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        filter: brightness(80%);
-        z-index: -2;
-    }
-
-    img.none {
-        display: none;
-    }
-    
-    .inicio {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        position: relative;
-    }
-    
-    .container {
-        background-color: rgba(68, 88, 98, 0.6);
-        padding: 100px;
-        border-radius: 10px;
-    }
-    
-    .img-responsive {
-        width: 50%;
-    }
-    h1.title {
-        text-align: center;
-        color: #FFFFFF;
-        font-size: 1.5em;
-    }
-
-    .paragrafo-inicio {
-        color: #FFFFFF;
-    }
-
-    .paragrafo {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .flex-btn {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    a.button {
-        text-align: center;
-        font-weight: 600;
-        align-items: center;
-    }
-
-    a.button-transparent {
-        text-align: center;
-        font-weight: 600;
-        color: #FFFFFF;
-
-    }
-
-
-    a.button-transparent:hover {
-        font-weight: 700;
-    }
-    /* a.button {
-        padding: 0px;
-        margin: 0;
-    }
-
-    a.button-transparent {
-        padding: 0;
-        margin: 0;
-    } */
-
-}
 
 
 
@@ -119,15 +22,15 @@ body {
 
 @media screen and 
 (max-width: 767px){
-
+    
 }
 
 
 /* Responsividade para Desktop */
 /* @media screen and
 (min-width: 1024px) {
-
-
+    
+    
 } */
 
 
@@ -219,19 +122,11 @@ header nav a:hover {
     margin-left: 32px;
 }
 
-.farmacia {
-    padding: 64px 80px;
-    text-align: center;
-    padding-bottom: 0;
-}
-
-.farmacia img {
-    margin: 64px auto;
-}
-
-.farmacia .paragrafo img {
-    max-width: 950px;
-    margin: 0 auto;
+@media screen and
+(min-width: 1270px) {
+    .img-tablet {
+        display: none;
+    }
 }
 
 .duvidas {
@@ -274,14 +169,14 @@ h2.doubt-title {
     border-left: 1px solid #FF725E;
     border-radius: 0 0 8px 8px;
     margin-top: -22px;
-
+    
     /* atributos para esconder o paragrafo*/
     padding: 0 24px;
-
+    
     height: 0;
     overflow: hidden;
     opacity: 0;
-
+    
     transition: .2s ease;
 }
 
@@ -362,4 +257,166 @@ footer p {
 
 .copyright a:hover {
     color: #FF725E;
+}
+
+/* Responsividaade para Tablet */
+    @media screen and 
+    (min-width: 768px) and
+    (max-width: 1270px) {
+        
+        nav {
+            display: flex;
+        }
+        main {
+            width: 100%;
+            margin: 0 auto;
+        }
+    
+        main::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/start-img.svg);
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            filter: brightness(80%);
+            z-index: -2;
+        }
+    
+        img.none {
+            display: none;
+        }
+        
+        .inicio {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+        }
+        
+        .container {
+            background-color: rgba(68, 88, 98, 0.6);
+            padding: 100px;
+            border-radius: 10px;
+        }
+        
+        .img-responsive {
+            width: 50%;
+        }
+        h1.title {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 1.5em;
+        }
+    
+        .paragrafo-inicio {
+            color: #FFFFFF;
+        }
+    
+        .paragrafo {
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        .flex-btn {
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        a.button {
+            text-align: center;
+            font-weight: 600;
+            align-items: center;
+        }
+    
+        a.button-transparent {
+            text-align: center;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+    
+    
+        a.button-transparent:hover {
+            font-weight: 700;
+        }
+        /* a.button {
+            padding: 0px;
+            margin: 0;
+        }
+    
+        a.button-transparent {
+            padding: 0;
+            margin: 0;
+        } */
+        
+        .display-none {
+            display: none;
+        }
+    
+        section.clinica {
+            display: flex;
+            gap: 0px;
+            padding: 64px 80px;
+        }
+    
+        .clinica-tablet {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        }
+    
+        .clinica-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .clinica-p {
+            text-align: left;
+            margin-top: 10px;
+        }
+    
+        .img-tablet {
+            width: 50%;
+        }
+    
+        .clinica li {
+        margin-left: 0px;    
+        }     
+
+    
+        footer nav  {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+
+
+        section.farmacia {
+            padding: 30px 80px;
+        }
+
+        .farmacia-tablet {
+            display: flex;
+            align-items: center;
+        }
+
+        .farmacia-text {
+            text-align: left;
+        }
+    }
+
+.farmacia {
+    padding: 64px 80px;
+    display: flex;
+    text-align: center;
+}
+
+.farmacia img {
+    margin: 64px auto;
 }
